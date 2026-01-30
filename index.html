@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayesha Ijaz | AI Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayesha Ijaz | AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header class="hero">
-  <h1 class="glow">Ayesha Ijaz</h1>
-  <p class="subtitle">AI & Machine Learning Enthusiast</p>
+<nav class="navbar">
+  <div class="logo">AI.</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="btn">Contact</a></li>
+  </ul>
+</nav>
 
-  <div class="socials">
-    <a href="mailto:ayesha.muhammadijaz@gmail.com">Email</a>
-    <a href="https://linkedin.com/in/ayesha-ijaztabassum" target="_blank">LinkedIn</a>
-    <a href="https://github.com/AyeshaIjazTabassum" target="_blank">GitHub</a>
-    <a href="https://huggingface.co/Ayesha-Ijaz" target="_blank">Hugging Face</a>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I’m <span>Ayesha</span></h1>
+    <h2>AI & Machine Learning Engineer</h2>
+    <p>
+      I build intelligent systems, agentic AI workflows,
+      and real-world machine learning solutions.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="https://github.com/AyeshaIjazTabassum" target="_blank" class="btn ghost">GitHub</a>
+    </div>
   </div>
-</header>
+</section>
 
-<section class="section fade-in">
-  <h2>About Me</h2>
+<section id="about" class="section">
+  <h3>About Me</h3>
   <p>
-    Computer Science graduate and MS-CS researcher with hands-on experience in
-    Artificial Intelligence, Machine Learning, Computer Vision, and Agentic AI systems.
-    Passionate about building intelligent, scalable, and human-centered AI solutions.
+    Computer Science graduate and MS-CS researcher with hands-on experience
+    in AI, Machine Learning, Computer Vision, and Agentic AI systems.
+    I focus on building scalable, human-centered AI products.
   </p>
 </section>
 
-<section class="section fade-in">
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Python</span><span>Machine Learning</span><span>Deep Learning</span>
-    <span>Computer Vision</span><span>NLP</span><span>TensorFlow</span>
-    <span>MATLAB</span><span>SQL</span><span>Git & GitHub</span>
-    <span>Django</span><span>Tkinter</span>
+<section id="skills" class="section">
+  <h3>Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="skill">Python</div>
+    <div class="skill">Machine Learning</div>
+    <div class="skill">Deep Learning</div>
+    <div class="skill">Computer Vision</div>
+    <div class="skill">NLP</div>
+    <div class="skill">TensorFlow</div>
+    <div class="skill">SQL</div>
+    <div class="skill">Git & GitHub</div>
   </div>
 </section>
 
-<section class="section fade-in">
-  <h2>Projects</h2>
+<section id="projects" class="section">
+  <h3>Featured Projects</h3>
 
-  <div class="card">
-    <h3>Smart Entry System</h3>
-    <p>
-      AI-based face recognition system using Python, Computer Vision,
-      Tkinter GUI, MySQL, and Django web portal.
-    </p>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h4>Smart Entry System</h4>
+      <p>
+        Face recognition system using Python & Computer Vision
+        with Tkinter GUI, MySQL database, and Django portal.
+      </p>
+      <span>Computer Vision · Python</span>
+    </div>
+
+    <div class="project-card">
+      <h4>DutyIn – Agentic AI</h4>
+      <p>
+        IBM watsonx hackathon project automating meeting follow-ups
+        using intelligent agent workflows.
+      </p>
+      <span>Agentic AI · Automation</span>
+    </div>
+
+    <div class="project-card">
+      <h4>mindX</h4>
+      <p>
+        Self-improving multi-agent system built for the
+        Internet of Agents Hackathon 2025.
+      </p>
+      <span>Multi-Agent Systems</span>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>DutyIn – Agentic AI Platform</h3>
-    <p>
-      IBM watsonx Orchestrate Hackathon project automating meeting follow-ups
-      through agentic workflows.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>mindX – Internet of Agents</h3>
-    <p>
-      Self-improving multi-agent system designed during the Internet of Agents Hackathon.
-    </p>
-  </div>
-
 </section>
 
-<section class="section fade-in">
-  <h2>Education</h2>
-  <div class="timeline">
-    <div>
-      <strong>MS Computer Science (In Progress)</strong>
-      <p>GCWUS – AI, Cloud Computing</p>
-    </div>
-    <div>
-      <strong>BS Computer Science</strong>
-      <p>GCWUS – CGPA 3.60/4.00</p>
-    </div>
+<section id="contact" class="section contact">
+  <h3>Let’s Connect</h3>
+  <p>Interested in AI, research, or collaboration?</p>
+  <div class="contact-links">
+    <a href="mailto:ayesha.muhammadijaz@gmail.com" class="btn primary">Email Me</a>
+    <a href="https://linkedin.com/in/ayesha-ijaztabassum" target="_blank" class="btn ghost">LinkedIn</a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Ayesha Ijaz · Built with ❤️ & AI</p>
+  © 2026 Ayesha Ijaz — Built with purpose, not templates.
 </footer>
 
 </body>
