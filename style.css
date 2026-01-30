@@ -1,29 +1,85 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  background: #fff;
   line-height: 1.6;
-  color: #000;
 }
 
-header {
+.hero {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 60px 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-h1, h2 {
-  margin-bottom: 10px;
+.subtitle {
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
-section {
-  margin-bottom: 30px;
-}
-
-a {
-  color: black;
+.links a {
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0 5px;
+  color: #000;
+  font-weight: 600;
 }
 
-a:hover {
+.links a:hover {
   text-decoration: underline;
+}
+
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  border: 1px solid #000;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.skills-grid span:hover {
+  background: #000;
+  color: #fff;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+  font-size: 0.9rem;
 }
