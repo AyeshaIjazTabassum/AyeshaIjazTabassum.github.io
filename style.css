@@ -1,10 +1,22 @@
 :root {
-  --bg: #0f1117;
-  --surface: #181b23;
-  --primary: #d4af37;
-  --secondary: #4fd1c5;
-  --text: #eaeaea;
-  --muted: #a0a3ad;
+  --bg: #0b1020;
+  --surface: #12172b;
+  --primary: #5b8cff;
+  --secondary: #7ee0d3;
+  --text: #e6e9f0;
+  --muted: #a1a6c3;
+  --border: #1e2442;
+}
+.card, .project {
+  border: 1px solid var(--border);
+}
+.card:hover,
+.project:hover {
+  box-shadow: 0 12px 40px rgba(91, 140, 255, 0.15);
+}
+.primary:hover {
+  background: #4a7af0;
+  box-shadow: 0 8px 24px rgba(91, 140, 255, 0.35);
 }
 
 * { box-sizing: border-box; }
