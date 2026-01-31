@@ -1,64 +1,61 @@
 :root {
-  --bg: #0b0d13;
-  --card: rgba(255,255,255,0.06);
-  --primary: #8b5cf6;
-  --secondary: #22d3ee;
-  --text: #e5e7eb;
+  --bg: #0f1117;
+  --surface: #181b23;
+  --primary: #d4af37;
+  --secondary: #4fd1c5;
+  --text: #eaeaea;
+  --muted: #a0a3ad;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
-  background: radial-gradient(circle at top, #111827, #020617);
+  background: var(--bg);
   color: var(--text);
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(12px);
-  background: rgba(0,0,0,0.4);
+  background: rgba(15,17,23,0.9);
+  backdrop-filter: blur(10px);
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar ul {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   list-style: none;
 }
 
 .navbar a {
   color: var(--text);
   text-decoration: none;
-  font-weight: 500;
 }
 
-.logo {
-  font-weight: 800;
-  color: var(--primary);
+.nav-btn {
+  padding: 8px 14px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
 }
 
 /* HERO */
 .hero {
   min-height: 90vh;
-  display: flex;
-  align-items: center;
-  padding: 0 60px;
+  padding: 120px 50px;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
-.hero h1 span {
-  color: var(--primary);
+.hero h2 {
+  color: var(--secondary);
 }
 
 .hero-buttons {
@@ -68,30 +65,29 @@ body {
 /* BUTTONS */
 .btn {
   padding: 12px 22px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--primary);
   color: #000;
 }
 
 .primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(139,92,246,0.4);
 }
 
-.ghost {
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  margin-left: 15px;
+.secondary {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  margin-left: 12px;
 }
 
-.ghost:hover {
-  background: var(--primary);
+.secondary:hover {
+  background: var(--secondary);
   color: #000;
 }
 
@@ -103,54 +99,57 @@ body {
 }
 
 .section h3 {
-  font-size: 2rem;
   margin-bottom: 30px;
 }
 
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
-  gap: 20px;
-}
-
-.skill {
-  background: var(--card);
-  padding: 18px;
+/* CARDS */
+.card {
+  background: var(--surface);
+  padding: 26px;
   border-radius: 12px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
-.skill:hover {
+.card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(34,211,238,0.15);
+}
+
+/* CHIPS */
+.chips span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 14px;
+  background: var(--surface);
+  border-radius: 20px;
 }
 
 /* PROJECTS */
-.projects-grid {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 24px;
 }
 
-.project-card {
-  background: var(--card);
-  padding: 30px;
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project {
+  background: var(--surface);
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.3s;
 }
 
-.project-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 30px 60px rgba(139,92,246,0.25);
+.project:hover {
+  transform: translateY(-8px);
 }
 
-.project-card span {
-  display: inline-block;
-  margin-top: 15px;
+.project a {
   color: var(--secondary);
-  font-size: 0.85rem;
+}
+
+/* LIST */
+.list {
+  padding-left: 20px;
+  color: var(--muted);
 }
 
 /* CONTACT */
@@ -158,24 +157,14 @@ body {
   text-align: center;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
-  opacity: 0.6;
+  color: var(--muted);
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero {
-    padding: 0 30px;
-  }
-
-  .navbar {
-    padding: 20px 30px;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
+  .hero h1 { font-size: 2.2rem; }
+  .navbar { padding: 18px 25px; }
 }
